@@ -1,4 +1,5 @@
 import { Sparkles, Code2, Rocket } from "lucide-react";
+import mePhoto from "@/assets/me-photo.jpeg";
 
 const highlights = [
   {
@@ -24,10 +25,17 @@ export function About() {
       <div className="grid gap-12 md:grid-cols-[1fr_1.4fr] md:gap-16">
         <div className="relative">
           <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-gradient-to-br from-secondary via-accent to-primary/40 shadow-[var(--shadow-lift)]">
-            <div className="flex h-full w-full items-end p-6">
-              <div className="rounded-2xl bg-card/80 px-4 py-3 backdrop-blur">
-                <p className="text-xs font-medium text-muted-foreground">Currently</p>
-                <p className="text-sm font-semibold text-foreground">Crafting AYO SRC</p>
+            <div className="relative h-full w-full">
+              <img
+                src={mePhoto}
+                alt="Fathul"
+                className="h-full w-full object-cover object-top"
+              />
+              <div className="absolute bottom-0 left-0 right-0 flex items-end p-6">
+                <div className="rounded-2xl bg-card/80 px-4 py-3 backdrop-blur">
+                  <p className="text-xs font-medium text-muted-foreground">Currently Work</p>
+                  <p className="text-sm font-semibold text-foreground">As a Frontend Developer</p>
+                </div>
               </div>
             </div>
           </div>
